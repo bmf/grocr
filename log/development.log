@@ -79,3 +79,5 @@ SGFzaHsABjoKQHVzZWR7AA==--9ada140d4775853bffd338fda66cbe710256630a
   [4;36;1mSQL (0.000269)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
   [4;35;1mSQL (0.000505)[0m   [0mSHOW TABLES[0m
 Completed in 0.07985 (12 reqs/sec) | Rendering: 0.00157 (1%) | DB: 0.00077 (0%) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.000218)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'grocr_development.sessions' doesn't exist: DELETE FROM sessions[0m
