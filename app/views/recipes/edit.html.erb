@@ -11,6 +11,12 @@
     <%= f.label :description %><br />
     <%= f.text_area :description %>
   </p>
+
+  <h2>Instructions</h2>
+	<div id="instructions_block">
+	<%= render :partial => "instructions/edit", :collection => @recipe.instructions %>
+	</div>
+   <p><%= add_instruction_link "add a new instruction"%></p>
   <p>
     <%= f.submit "Update" %>
   </p>

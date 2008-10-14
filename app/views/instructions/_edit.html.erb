@@ -1,0 +1,14 @@
+<div>
+	<% new_or_existing = edit.new_record? ? 'new' : 'existing' %>
+	<% prefix = "recipe[#{new_or_existing}_instruction_attributes][]" %>
+	<% fields_for prefix, edit do |instruction_form| %>
+	
+	description:
+	<%= instruction_form.text_field :description %>
+	
+	step:
+	<%= instruction_form.text_field :step %>
+	
+	
+	<% end %>
+</div>
