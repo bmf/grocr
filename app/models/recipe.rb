@@ -1,12 +1,14 @@
 class Recipe < ActiveRecord::Base
   
   validates_presence_of :title 
-  has_many :instructions
-  after_update :save_instructions
+  has_many :instructions, :order => 'step'
   
+  validates_associated :instructions
+  
+  after_update :save_instructions  
   
   def existing_instruction_attributes=(instruction_attributes)
-    self.instructions.reject(&:new_record?).each do |instruction|
+  	self.instructions.reject(&:new_record?).each do |instruction|
       attributes = instruction_attributes[instruction.id.to_s]
 
       if attributes
@@ -15,8 +17,7 @@ class Recipe < ActiveRecord::Base
         instructions.delete(instruction)
       end
     end
-  end
-  
+  end  
   
   def new_instruction_attributes=(instruction_attributes)
     instruction_attributes.each do |instruction|
@@ -24,10 +25,10 @@ class Recipe < ActiveRecord::Base
     end
   end
   
-  def save_instructions
-    self.instructions do |instruction|
-      instruction.save(false)
+  protected
+    def save_instructions
+      self.instructions.each do |instruction|
+        instruction.save(false)
+      end
     end
-  end
-  
 end

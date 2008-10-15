@@ -4,8 +4,8 @@ development:
   adapter: mysql
   database: grocr_development
   host: localhost
-  username: root
-  password: root
+  username: rails
+  password: admin
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -14,8 +14,8 @@ test:
   adapter: mysql
   database: grocr_test
   host: localhost
-  username: root
-  password: root
+  username: rails
+  password: admin
   
 production:
   adapter: sqlite3

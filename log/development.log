@@ -1066,3 +1066,456 @@ Rendered instructions/_edit (0.00086)
 Rendered instructions/_edit (0.00090)
 Rendered instructions/_edit (0.00085)
 Completed in 0.05865 (17 reqs/sec) | Rendering: 0.03212 (54%) | DB: 0.01069 (18%) | 200 OK [http://localhost/recipes/3/edit]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2008-10-15 12:51:51) [GET]
+  Session ID: 9bf6808f1e9c580bd2b441d4ce5cac5b
+  Parameters: {"action"=>"index", "controller"=>"recipes"}
+  [4;36;1mSQL (0.162152)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecipe Load (0.237468)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering template within layouts/recipes
+Rendering recipes/index
+Completed in 0.30801 (3 reqs/sec) | Rendering: 0.01044 (3%) | DB: 0.39962 (129%) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2008-10-15 12:51:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--9ada140d4775853bffd338fda66cbe710256630a
+  Parameters: {"action"=>"new", "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.221769)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+Rendering template within layouts/recipes
+Rendering recipes/new
+Completed in 0.33345 (2 reqs/sec) | Rendering: 0.08696 (26%) | DB: 0.22177 (66%) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#create (for 127.0.0.1 at 2008-10-15 12:51:58) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--d5701d06b74b2a61e9d7bd39ed113315b6f7239e
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"f75703a12798497dae53a6b2c36be845801504c2", "action"=>"create", "controller"=>"recipes", "recipe"=>{"title"=>"Test", "description"=>"test"}}
+  [4;35;1mRecipe Columns (0.011631)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mSQL (0.000222)[0m   [0;1mBEGIN[0m
+  [4;35;1mRecipe Create (0.088630)[0m   [0mINSERT INTO `recipes` (`updated_at`, `title`, `description`, `created_at`) VALUES('2008-10-15 17:51:58', 'Test', 'test', '2008-10-15 17:51:58')[0m
+  [4;36;1mSQL (0.064048)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/recipes/1
+Completed in 0.20137 (4 reqs/sec) | DB: 0.16453 (81%) | 302 Found [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2008-10-15 12:51:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk
+LgY6CkB1c2VkewY7B0Y=--3973e5d46f8d900c4c1605d2ec39f68fc2d37e28
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"recipes"}
+  [4;35;1mRecipe Columns (0.001627)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.039897)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/show
+  [4;35;1mInstruction Load (0.024194)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+Completed in 0.13773 (7 reqs/sec) | Rendering: 0.04626 (33%) | DB: 0.06572 (47%) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2008-10-15 12:52:00) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk
+LgY6CkB1c2VkewY7B1Q=--7686f22f7543b6159c02ad6040774b32d89177ad
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.011439)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000343)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/edit
+  [4;36;1mInstruction Columns (0.001556)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+  [4;35;1mSQL (0.000265)[0m   [0mSELECT count(*) AS count_all FROM `instructions` WHERE (`instructions`.recipe_id = 1) [0m
+Rendered instructions/_edit (0.00376)
+Completed in 0.07533 (13 reqs/sec) | Rendering: 0.03974 (52%) | DB: 0.01360 (18%) | 200 OK [http://127.0.0.1/recipes/1/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2008-10-15 12:52:13) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--d5701d06b74b2a61e9d7bd39ed113315b6f7239e
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"f75703a12798497dae53a6b2c36be845801504c2", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"recipes", "recipe"=>{"title"=>"Test", "description"=>"test", "new_instruction_attributes"=>[{"step"=>"1", "description"=>"Instruction 1"}, {"step"=>"2", "description"=>"Instruction 2"}]}}
+  [4;36;1mRecipe Columns (0.012431)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000334)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+  [4;36;1mInstruction Load (0.000314)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;35;1mInstruction Columns (0.001429)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+  [4;35;1mInstruction Create (0.000265)[0m   [0mINSERT INTO `instructions` (`step`, `updated_at`, `recipe_id`, `description`, `created_at`) VALUES(1, '2008-10-15 17:52:13', 1, 'Instruction 1', '2008-10-15 17:52:13')[0m
+  [4;36;1mInstruction Create (0.000146)[0m   [0;1mINSERT INTO `instructions` (`step`, `updated_at`, `recipe_id`, `description`, `created_at`) VALUES(2, '2008-10-15 17:52:13', 1, 'Instruction 2', '2008-10-15 17:52:13')[0m
+  [4;35;1mSQL (0.000550)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/recipes/1
+Completed in 0.07724 (12 reqs/sec) | DB: 0.01560 (20%) | 302 Found [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2008-10-15 12:52:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B0Y=--33c351bff7e4cf4676e1eb0180ba21d58a288ac0
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.001563)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000255)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/show
+  [4;36;1mInstruction Load (0.000366)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;35;1mInstruction Columns (0.001449)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+Completed in 0.04605 (21 reqs/sec) | Rendering: 0.02012 (43%) | DB: 0.00363 (7%) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2008-10-15 12:52:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B1Q=--8639e3647de008bf919661acba323bf16984e002
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.011688)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000409)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/edit
+  [4;36;1mInstruction Columns (0.001707)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+  [4;35;1mSQL (0.000280)[0m   [0mSELECT count(*) AS count_all FROM `instructions` WHERE (`instructions`.recipe_id = 1) [0m
+  [4;36;1mInstruction Load (0.000256)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+Rendered instructions/_edit (0.00118)
+Rendered instructions/_edit (0.00098)
+Rendered instructions/_edit (0.00113)
+Completed in 0.08011 (12 reqs/sec) | Rendering: 0.04106 (51%) | DB: 0.01434 (17%) | 200 OK [http://127.0.0.1/recipes/1/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2008-10-15 12:52:27) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--d5701d06b74b2a61e9d7bd39ed113315b6f7239e
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"f75703a12798497dae53a6b2c36be845801504c2", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"recipes", "recipe"=>{"title"=>"Test", "description"=>"test", "existing_instruction_attributes"=>{"1"=>{"step"=>"1", "description"=>"Instruction 1 - 1"}, "2"=>{"step"=>"2", "description"=>"Instruction 2"}}, "new_instruction_attributes"=>[{"step"=>"3", "description"=>"Instruction 3"}]}}
+  [4;35;1mRecipe Columns (0.012458)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.000510)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+  [4;35;1mInstruction Load (0.000366)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;36;1mInstruction Columns (0.001473)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+  [4;35;1mSQL (0.000141)[0m   [0mBEGIN[0m
+  [4;36;1mInstruction Create (0.000241)[0m   [0;1mINSERT INTO `instructions` (`step`, `updated_at`, `recipe_id`, `description`, `created_at`) VALUES(3, '2008-10-15 17:52:27', 1, 'Instruction 3', '2008-10-15 17:52:27')[0m
+  [4;35;1mInstruction Update (0.040565)[0m   [0mUPDATE `instructions` SET `description` = 'Instruction 1 - 1', `updated_at` = '2008-10-15 17:52:27' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.141088)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/recipes/1
+Completed in 0.26360 (3 reqs/sec) | DB: 0.19684 (74%) | 302 Found [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2008-10-15 12:52:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B0Y=--33c351bff7e4cf4676e1eb0180ba21d58a288ac0
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"recipes"}
+  [4;35;1mRecipe Columns (0.001566)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.000259)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/show
+  [4;35;1mInstruction Load (0.000367)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;36;1mInstruction Columns (0.001510)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+Completed in 0.05521 (18 reqs/sec) | Rendering: 0.02085 (37%) | DB: 0.00370 (6%) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2008-10-15 12:52:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B1Q=--8639e3647de008bf919661acba323bf16984e002
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"recipes"}
+  [4;35;1mRecipe Columns (0.012335)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.000238)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/edit
+  [4;35;1mInstruction Columns (0.001570)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+  [4;36;1mSQL (0.001029)[0m   [0;1mSELECT count(*) AS count_all FROM `instructions` WHERE (`instructions`.recipe_id = 1) [0m
+  [4;35;1mInstruction Load (0.000296)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+Rendered instructions/_edit (0.00113)
+Rendered instructions/_edit (0.00109)
+Rendered instructions/_edit (0.00105)
+Rendered instructions/_edit (0.00100)
+Completed in 0.07594 (13 reqs/sec) | Rendering: 0.03857 (50%) | DB: 0.01547 (20%) | 200 OK [http://127.0.0.1/recipes/1/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2008-10-15 12:52:34) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--d5701d06b74b2a61e9d7bd39ed113315b6f7239e
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"f75703a12798497dae53a6b2c36be845801504c2", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"recipes", "recipe"=>{"title"=>"Test", "description"=>"test", "existing_instruction_attributes"=>{"1"=>{"step"=>"1", "description"=>"Instruction 1"}, "2"=>{"step"=>"2", "description"=>"Instruction 2"}, "3"=>{"step"=>"", "description"=>"Instruction 3"}}}}
+  [4;36;1mRecipe Columns (0.011961)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000453)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+  [4;36;1mInstruction Load (0.000362)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;35;1mInstruction Columns (0.001505)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mBEGIN[0m
+  [4;35;1mInstruction Update (0.111325)[0m   [0mUPDATE `instructions` SET `description` = 'Instruction 1', `updated_at` = '2008-10-15 17:52:34' WHERE `id` = 1[0m
+  [4;36;1mInstruction Update (0.000393)[0m   [0;1mUPDATE `instructions` SET `updated_at` = '2008-10-15 17:52:34', `step` = NULL WHERE `id` = 3[0m
+  [4;35;1mSQL (0.000668)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/recipes/1
+Completed in 0.18719 (5 reqs/sec) | DB: 0.12678 (67%) | 302 Found [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2008-10-15 12:52:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B0Y=--33c351bff7e4cf4676e1eb0180ba21d58a288ac0
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.001716)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000238)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/show
+  [4;36;1mInstruction Load (0.000381)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;35;1mInstruction Columns (0.001514)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+Completed in 0.04827 (20 reqs/sec) | Rendering: 0.02059 (42%) | DB: 0.00385 (7%) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2008-10-15 12:52:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B1Q=--8639e3647de008bf919661acba323bf16984e002
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.001552)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000199)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/edit
+  [4;36;1mInstruction Columns (0.001548)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+  [4;35;1mSQL (0.000218)[0m   [0mSELECT count(*) AS count_all FROM `instructions` WHERE (`instructions`.recipe_id = 1) [0m
+  [4;36;1mInstruction Load (0.000232)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+Rendered instructions/_edit (0.00116)
+Rendered instructions/_edit (0.00104)
+Rendered instructions/_edit (0.00100)
+Rendered instructions/_edit (0.00105)
+Completed in 0.06229 (16 reqs/sec) | Rendering: 0.03774 (60%) | DB: 0.00375 (6%) | 200 OK [http://127.0.0.1/recipes/1/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2008-10-15 12:52:39) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--d5701d06b74b2a61e9d7bd39ed113315b6f7239e
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"f75703a12798497dae53a6b2c36be845801504c2", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"recipes", "recipe"=>{"title"=>"Test", "description"=>"test", "existing_instruction_attributes"=>{"1"=>{"step"=>"1", "description"=>"Instruction 1"}, "2"=>{"step"=>"2", "description"=>"Instruction 2"}, "3"=>{"step"=>"3", "description"=>"Instruction 3"}}}}
+  [4;35;1mRecipe Columns (0.012596)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.001671)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+  [4;35;1mInstruction Load (0.000373)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;36;1mInstruction Columns (0.001470)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+  [4;35;1mSQL (0.000667)[0m   [0mBEGIN[0m
+  [4;36;1mInstruction Update (0.000301)[0m   [0;1mUPDATE `instructions` SET `updated_at` = '2008-10-15 17:52:39', `step` = 3 WHERE `id` = 3[0m
+  [4;35;1mSQL (0.000591)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/recipes/1
+Completed in 0.16076 (6 reqs/sec) | DB: 0.01767 (10%) | 302 Found [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2008-10-15 12:52:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B0Y=--33c351bff7e4cf4676e1eb0180ba21d58a288ac0
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.002777)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000330)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/show
+  [4;36;1mInstruction Load (0.000369)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;35;1mInstruction Columns (0.001445)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+Completed in 0.05533 (18 reqs/sec) | Rendering: 0.02619 (47%) | DB: 0.00492 (8%) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2008-10-15 12:52:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B1Q=--8639e3647de008bf919661acba323bf16984e002
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.011626)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000818)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/edit
+  [4;36;1mInstruction Columns (0.001558)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+  [4;35;1mSQL (0.000217)[0m   [0mSELECT count(*) AS count_all FROM `instructions` WHERE (`instructions`.recipe_id = 1) [0m
+  [4;36;1mInstruction Load (0.000231)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+Rendered instructions/_edit (0.00114)
+Rendered instructions/_edit (0.00098)
+Rendered instructions/_edit (0.00101)
+Rendered instructions/_edit (0.00102)
+Completed in 0.07827 (12 reqs/sec) | Rendering: 0.04210 (53%) | DB: 0.01445 (18%) | 200 OK [http://127.0.0.1/recipes/1/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2008-10-15 12:52:43) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--d5701d06b74b2a61e9d7bd39ed113315b6f7239e
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"f75703a12798497dae53a6b2c36be845801504c2", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"recipes", "recipe"=>{"title"=>"Test", "description"=>"test", "existing_instruction_attributes"=>{"1"=>{"step"=>"1", "description"=>""}, "2"=>{"step"=>"2", "description"=>"Instruction 2"}, "3"=>{"step"=>"3", "description"=>"Instruction 3"}}}}
+  [4;35;1mRecipe Columns (0.011578)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.000349)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+  [4;35;1mInstruction Load (0.000445)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;36;1mInstruction Columns (0.001846)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+  [4;35;1mSQL (0.000186)[0m   [0mBEGIN[0m
+  [4;36;1mInstruction Update (0.000296)[0m   [0;1mUPDATE `instructions` SET `description` = '', `updated_at` = '2008-10-15 17:52:44' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000612)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/recipes/1
+Completed in 0.08129 (12 reqs/sec) | DB: 0.01531 (18%) | 302 Found [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2008-10-15 12:52:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B0Y=--33c351bff7e4cf4676e1eb0180ba21d58a288ac0
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.001590)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000241)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/show
+  [4;36;1mInstruction Load (0.000547)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;35;1mInstruction Columns (0.001508)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+Completed in 0.04804 (20 reqs/sec) | Rendering: 0.02105 (43%) | DB: 0.00389 (8%) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2008-10-15 12:52:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B1Q=--8639e3647de008bf919661acba323bf16984e002
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.012752)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000649)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/edit
+  [4;36;1mInstruction Columns (0.001608)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+  [4;35;1mSQL (0.000221)[0m   [0mSELECT count(*) AS count_all FROM `instructions` WHERE (`instructions`.recipe_id = 1) [0m
+  [4;36;1mInstruction Load (0.000239)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+Rendered instructions/_edit (0.00111)
+Rendered instructions/_edit (0.00097)
+Rendered instructions/_edit (0.00100)
+Rendered instructions/_edit (0.00100)
+Completed in 0.08341 (11 reqs/sec) | Rendering: 0.04490 (53%) | DB: 0.01547 (18%) | 200 OK [http://127.0.0.1/recipes/1/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2008-10-15 12:52:49) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--d5701d06b74b2a61e9d7bd39ed113315b6f7239e
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"f75703a12798497dae53a6b2c36be845801504c2", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"recipes", "recipe"=>{"title"=>"Test", "description"=>"test", "existing_instruction_attributes"=>{"1"=>{"step"=>"1", "description"=>"Instruction 1"}, "2"=>{"step"=>"2", "description"=>"Instruction 2"}, "3"=>{"step"=>"3", "description"=>"Instruction 3"}}}}
+  [4;35;1mRecipe Columns (0.011960)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.000411)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+  [4;35;1mInstruction Load (0.000377)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;36;1mInstruction Columns (0.001473)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+  [4;35;1mSQL (0.000119)[0m   [0mBEGIN[0m
+  [4;36;1mInstruction Update (0.000345)[0m   [0;1mUPDATE `instructions` SET `description` = 'Instruction 1', `updated_at` = '2008-10-15 17:52:49' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000667)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/recipes/1
+Completed in 0.15104 (6 reqs/sec) | DB: 0.01535 (10%) | 302 Found [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2008-10-15 12:52:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B0Y=--33c351bff7e4cf4676e1eb0180ba21d58a288ac0
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.001336)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000244)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/show
+  [4;36;1mInstruction Load (0.000341)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;35;1mInstruction Columns (0.001503)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+Completed in 0.04631 (21 reqs/sec) | Rendering: 0.02043 (44%) | DB: 0.00342 (7%) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2008-10-15 12:53:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B1Q=--8639e3647de008bf919661acba323bf16984e002
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.011541)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000342)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/edit
+  [4;36;1mInstruction Columns (0.001626)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+  [4;35;1mSQL (0.000254)[0m   [0mSELECT count(*) AS count_all FROM `instructions` WHERE (`instructions`.recipe_id = 1) [0m
+  [4;36;1mInstruction Load (0.000246)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+Rendered instructions/_edit (0.00113)
+Rendered instructions/_edit (0.00092)
+Rendered instructions/_edit (0.00103)
+Rendered instructions/_edit (0.00102)
+Completed in 0.08046 (12 reqs/sec) | Rendering: 0.04353 (54%) | DB: 0.01401 (17%) | 200 OK [http://127.0.0.1/recipes/1/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2008-10-15 12:53:18) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--d5701d06b74b2a61e9d7bd39ed113315b6f7239e
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"f75703a12798497dae53a6b2c36be845801504c2", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"recipes", "recipe"=>{"title"=>"Test", "description"=>"test", "existing_instruction_attributes"=>{"1"=>{"step"=>"1", "description"=>""}, "2"=>{"step"=>"2", "description"=>"Instruction 2"}, "3"=>{"step"=>"3", "description"=>"Instruction 3"}}}}
+  [4;35;1mRecipe Columns (0.012430)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.001186)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+  [4;35;1mInstruction Load (0.000363)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;36;1mInstruction Columns (0.001544)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+  [4;35;1mSQL (0.000125)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/recipes
+Rendering recipes/edit
+Rendered instructions/_edit (0.00104)
+Rendered instructions/_edit (0.00095)
+Rendered instructions/_edit (0.00095)
+Rendered instructions/_edit (0.00105)
+Completed in 0.08190 (12 reqs/sec) | Rendering: 0.01770 (21%) | DB: 0.01573 (19%) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2008-10-15 12:53:22) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--d5701d06b74b2a61e9d7bd39ed113315b6f7239e
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"f75703a12798497dae53a6b2c36be845801504c2", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"recipes", "recipe"=>{"title"=>"Test", "description"=>"test", "existing_instruction_attributes"=>{"1"=>{"step"=>"1", "description"=>"Instruction 1"}, "2"=>{"step"=>"2", "description"=>"Instruction 2"}, "3"=>{"step"=>"3", "description"=>"Instruction 3"}}}}
+  [4;35;1mRecipe Columns (0.012061)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.000335)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+  [4;35;1mInstruction Load (0.000362)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;36;1mInstruction Columns (0.001480)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+  [4;35;1mSQL (0.000119)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/recipes/1
+Completed in 0.07398 (13 reqs/sec) | DB: 0.01450 (19%) | 302 Found [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2008-10-15 12:53:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B0Y=--33c351bff7e4cf4676e1eb0180ba21d58a288ac0
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"recipes"}
+  [4;35;1mRecipe Columns (0.001535)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.000228)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/show
+  [4;35;1mInstruction Load (0.000348)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+  [4;36;1mInstruction Columns (0.001487)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+Completed in 0.04656 (21 reqs/sec) | Rendering: 0.02017 (43%) | DB: 0.00360 (7%) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2008-10-15 12:53:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B1Q=--8639e3647de008bf919661acba323bf16984e002
+  Parameters: {"action"=>"index", "controller"=>"recipes"}
+  [4;35;1mRecipe Load (0.000280)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering template within layouts/recipes
+Rendering recipes/index
+  [4;36;1mRecipe Columns (0.015393)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+Completed in 0.04468 (22 reqs/sec) | Rendering: 0.00750 (16%) | DB: 0.01567 (35%) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2008-10-15 12:53:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2YwMTY1YjBkYWIwY2QxZWI2NDNjNzBjM2JkOTM2
+ZTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--d5701d06b74b2a61e9d7bd39ed113315b6f7239e
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"recipes"}
+  [4;35;1mRecipe Columns (0.012039)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.000364)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 1) [0m
+Rendering template within layouts/recipes
+Rendering recipes/edit
+  [4;35;1mInstruction Columns (0.001738)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+  [4;36;1mSQL (0.000250)[0m   [0;1mSELECT count(*) AS count_all FROM `instructions` WHERE (`instructions`.recipe_id = 1) [0m
+  [4;35;1mInstruction Load (0.000242)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 1) ORDER BY step[0m
+Rendered instructions/_edit (0.00116)
+Rendered instructions/_edit (0.00096)
+Rendered instructions/_edit (0.00110)
+Rendered instructions/_edit (0.00105)
+Completed in 0.07652 (13 reqs/sec) | Rendering: 0.03885 (50%) | DB: 0.01463 (19%) | 200 OK [http://127.0.0.1/recipes/1/edit]

@@ -58,6 +58,8 @@ class RecipesController < ApplicationController
   # PUT /recipes/1.xml
   def update
     @recipe = Recipe.find(params[:id])
+    
+    params[:recipe][:existing_instruction_attributes] ||= {} # default value for existing instructions (if none are provided) 
 
     respond_to do |format|
       if @recipe.update_attributes(params[:recipe])
