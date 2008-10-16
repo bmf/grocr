@@ -1519,3 +1519,558 @@ Rendered instructions/_edit (0.00096)
 Rendered instructions/_edit (0.00110)
 Rendered instructions/_edit (0.00105)
 Completed in 0.07652 (13 reqs/sec) | Rendering: 0.03885 (50%) | DB: 0.01463 (19%) | 200 OK [http://127.0.0.1/recipes/1/edit]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2008-10-15 22:15:13) [GET]
+  Session ID: 0d9bea33ff8cb24df4fadf365b44b583
+  Parameters: {"action"=>"index", "controller"=>"recipes"}
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2008-10-15 22:15:13) [GET]
+  Session ID: 0d9bea33ff8cb24df4fadf365b44b583
+  Parameters: {"action"=>"index", "controller"=>"recipes"}
+
+
+Mysql::Error (Access denied for user 'rails'@'localhost' (using password: YES)):
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:527:in `real_connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:527:in `connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:186:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:85:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:85:in `mysql_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:292:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:292:in `connection='
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:260:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/session_management.rb:130:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:389:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2008-10-15 22:16:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--9ada140d4775853bffd338fda66cbe710256630a
+  Parameters: {"action"=>"index", "controller"=>"recipes"}
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2008-10-15 22:16:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--9ada140d4775853bffd338fda66cbe710256630a
+  Parameters: {"action"=>"index", "controller"=>"recipes"}
+
+
+Mysql::Error (Access denied for user 'rails'@'localhost' (using password: YES)):
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:527:in `real_connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:527:in `connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:186:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:85:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:85:in `mysql_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:292:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:292:in `connection='
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:260:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/session_management.rb:130:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:389:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2008-10-15 22:16:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--9ada140d4775853bffd338fda66cbe710256630a
+  Parameters: {"action"=>"index", "controller"=>"recipes"}
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2008-10-15 22:16:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--9ada140d4775853bffd338fda66cbe710256630a
+  Parameters: {"action"=>"index", "controller"=>"recipes"}
+
+
+Mysql::Error (Access denied for user 'rails'@'localhost' (using password: YES)):
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:527:in `real_connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:527:in `connect'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:186:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:85:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/mysql_adapter.rb:85:in `mysql_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:292:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:292:in `connection='
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:260:in `retrieve_connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/session_management.rb:130:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:389:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2008-10-15 22:16:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--9ada140d4775853bffd338fda66cbe710256630a
+  Parameters: {"action"=>"index", "controller"=>"recipes"}
+  [4;36;1mSQL (0.046877)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRecipe Load (0.050732)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering template within layouts/recipes
+Rendering recipes/index
+  [4;36;1mRecipe Columns (0.002132)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+Completed in 0.13442 (7 reqs/sec) | Rendering: 0.04700 (34%) | DB: 0.09974 (74%) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2008-10-15 22:16:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"recipes"}
+  [4;35;1mRecipe Columns (0.001236)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.042206)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 3) [0m
+Rendering template within layouts/recipes
+Rendering recipes/edit
+  [4;35;1mInstruction Columns (0.050251)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+  [4;36;1mSQL (0.000422)[0m   [0;1mSELECT count(*) AS count_all FROM `instructions` WHERE (`instructions`.recipe_id = 3) [0m
+  [4;35;1mInstruction Load (0.000480)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 3) ORDER BY step[0m
+Rendered instructions/_edit (0.00168)
+Rendered instructions/_edit (0.00133)
+Rendered instructions/_edit (0.00132)
+Rendered instructions/_edit (0.00090)
+Completed in 0.17555 (5 reqs/sec) | Rendering: 0.06606 (37%) | DB: 0.09459 (53%) | 200 OK [http://localhost/recipes/3/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2008-10-15 22:16:57) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"9f34d8698524b4733c317de53e75d89ff2dad132", "_method"=>"put", "action"=>"update", "id"=>"3", "recipe"=>{"title"=>"Brandon", "existing_instruction_attributes"=>{"1"=>{"step"=>"1", "description"=>"This is step 1"}, "2"=>{"step"=>"2", "description"=>"This is step 22323"}, "3"=>{"step"=>"3", "description"=>"This is step 3"}}, "description"=>""}, "controller"=>"recipes"}
+  [4;36;1mRecipe Columns (0.001819)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mRecipe Load (0.000286)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 3) [0m
+  [4;36;1mInstruction Load (0.000427)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 3) ORDER BY step[0m
+  [4;35;1mInstruction Columns (0.001755)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+  [4;36;1mSQL (0.000164)[0m   [0;1mBEGIN[0m
+  [4;35;1mInstruction Update (0.000559)[0m   [0mUPDATE `instructions` SET `updated_at` = '2008-10-16 02:16:57', `description` = 'This is step 22323' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.000601)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/3
+Completed in 0.06277 (15 reqs/sec) | DB: 0.00561 (8%) | 302 Found [http://localhost/recipes/3]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2008-10-15 22:16:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B0Y=--7daf8ca84ff1b22a8e186d5ac1509386a7eb161f
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"recipes"}
+  [4;35;1mRecipe Columns (0.001260)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.000188)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 3) [0m
+Rendering template within layouts/recipes
+Rendering recipes/show
+  [4;35;1mInstruction Load (0.000349)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 3) ORDER BY step[0m
+  [4;36;1mInstruction Columns (0.001682)[0m   [0;1mSHOW FIELDS FROM `instructions`[0m
+Completed in 0.03895 (25 reqs/sec) | Rendering: 0.01935 (49%) | DB: 0.00348 (8%) | 200 OK [http://localhost/recipes/3]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2008-10-15 22:17:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiVSZWNpcGUgd2FzIHN1Y2Nlc3NmdWxseSB1cGRhdGVk
+LgY6CkB1c2VkewY7B1Q=--80aaf2ce0c625ed40b536b53d243e43b7742c9a2
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"recipes"}
+  [4;35;1mRecipe Columns (0.001243)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mRecipe Load (0.000955)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 3) [0m
+Rendering template within layouts/recipes
+Rendering recipes/edit
+  [4;35;1mInstruction Columns (0.001848)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mSELECT count(*) AS count_all FROM `instructions` WHERE (`instructions`.recipe_id = 3) [0m
+  [4;35;1mInstruction Load (0.000318)[0m   [0mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 3) ORDER BY step[0m
+Rendered instructions/_edit (0.00159)
+Rendered instructions/_edit (0.00157)
+Rendered instructions/_edit (0.00124)
+Rendered instructions/_edit (0.00116)
+Completed in 0.06464 (15 reqs/sec) | Rendering: 0.04502 (69%) | DB: 0.00466 (7%) | 200 OK [http://localhost/recipes/3/edit]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2008-10-15 22:17:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"recipes"}
+  [4;36;1mRecipe Load (0.000258)[0m   [0;1mSELECT * FROM `recipes` [0m
+Rendering template within layouts/recipes
+Rendering recipes/index
+  [4;35;1mRecipe Columns (0.001847)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+Completed in 0.02856 (35 reqs/sec) | Rendering: 0.01155 (40%) | DB: 0.00210 (7%) | 200 OK [http://localhost/recipes]
+  [4;36;1mSQL (0.000203)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000412)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.024598)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRecipes (20081011152829)
+Migrating to CreateInstructions (20081011153312)
+Migrating to CreateIngredients (20081016024314)
+  [4;35;1mSQL (0.003011)[0m   [0mCREATE TABLE `ingredients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000992)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081016024314')[0m
+Migrating to CreateCategories (20081016024712)
+  [4;35;1mSQL (0.002218)[0m   [0mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000807)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081016024712')[0m
+Migrating to CreateAuthors (20081016024849)
+  [4;35;1mSQL (0.002606)[0m   [0mCREATE TABLE `authors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_namee` varchar(255), `last_name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000635)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081016024849')[0m
+  [4;35;1mSQL (0.000398)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000204)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000300)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001718)[0m   [0;1mSHOW FIELDS FROM `authors`[0m
+  [4;35;1mSQL (0.001026)[0m   [0mdescribe `authors`[0m
+  [4;36;1mSQL (0.000906)[0m   [0;1mSHOW KEYS FROM `authors`[0m
+  [4;35;1mSQL (0.001060)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.001402)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.000373)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.002685)[0m   [0;1mSHOW FIELDS FROM `ingredients`[0m
+  [4;35;1mSQL (0.001724)[0m   [0mdescribe `ingredients`[0m
+  [4;36;1mSQL (0.000335)[0m   [0;1mSHOW KEYS FROM `ingredients`[0m
+  [4;35;1mSQL (0.001757)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+  [4;36;1mSQL (0.001632)[0m   [0;1mdescribe `instructions`[0m
+  [4;35;1mSQL (0.000433)[0m   [0mSHOW KEYS FROM `instructions`[0m
+  [4;36;1mSQL (0.001743)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mSQL (0.001806)[0m   [0mdescribe `recipes`[0m
+  [4;36;1mSQL (0.000341)[0m   [0;1mSHOW KEYS FROM `recipes`[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-10-15 22:50:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mSQL (0.000209)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCategory Load (0.000279)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.01758 (56 reqs/sec) | Rendering: 0.00350 (19%) | DB: 0.00049 (2%) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2008-10-15 22:50:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"new", "controller"=>"categories"}
+  [4;36;1mCategory Columns (0.001775)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Rendering template within layouts/categories
+Rendering categories/new
+Completed in 0.03227 (30 reqs/sec) | Rendering: 0.01499 (46%) | DB: 0.00178 (5%) | 200 OK [http://localhost/categories/new]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-10-15 22:50:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mCategory Load (0.000242)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.01523 (65 reqs/sec) | Rendering: 0.00154 (10%) | DB: 0.00024 (1%) | 200 OK [http://localhost/categories]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2008-10-15 22:50:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"authors"}
+  [4;36;1mAuthor Load (0.000253)[0m   [0;1mSELECT * FROM `authors` [0m
+Rendering template within layouts/authors
+Rendering authors/index
+Completed in 0.01699 (58 reqs/sec) | Rendering: 0.00332 (19%) | DB: 0.00025 (1%) | 200 OK [http://localhost/authors]
+  [4;36;1mSQL (0.000205)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000352)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000180)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000230)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000164)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAuthors (20081016024849)
+  [4;35;1mSQL (0.001745)[0m   [0mDROP TABLE `authors`[0m
+  [4;36;1mSQL (0.000806)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20081016024849'[0m
+Migrating to CreateCategories (20081016024712)
+  [4;35;1mSQL (0.001970)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (0.000935)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20081016024712'[0m
+Migrating to CreateIngredients (20081016024314)
+  [4;35;1mSQL (0.001608)[0m   [0mDROP TABLE `ingredients`[0m
+  [4;36;1mSQL (0.000842)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20081016024314'[0m
+Migrating to CreateInstructions (20081011153312)
+  [4;35;1mSQL (0.001318)[0m   [0mDROP TABLE `instructions`[0m
+  [4;36;1mSQL (0.000630)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20081011153312'[0m
+Migrating to CreateRecipes (20081011152829)
+  [4;35;1mSQL (0.001274)[0m   [0mDROP TABLE `recipes`[0m
+  [4;36;1mSQL (0.000785)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20081011152829'[0m
+  [4;35;1mSQL (0.000354)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000246)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000205)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000345)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRecipes (20081011152829)
+  [4;35;1mSQL (0.003142)[0m   [0mCREATE TABLE `recipes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000712)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081011152829')[0m
+Migrating to CreateInstructions (20081011153312)
+  [4;35;1mSQL (0.002266)[0m   [0mCREATE TABLE `instructions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `step` int(11), `description` text, `recipe_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000808)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081011153312')[0m
+Migrating to CreateIngredients (20081016024314)
+  [4;35;1mSQL (0.002219)[0m   [0mCREATE TABLE `ingredients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000829)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081016024314')[0m
+Migrating to CreateCategories (20081016024712)
+  [4;35;1mSQL (0.002245)[0m   [0mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000905)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081016024712')[0m
+Migrating to CreateAuthors (20081016024849)
+  [4;35;1mSQL (0.002264)[0m   [0mCREATE TABLE `authors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000825)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081016024849')[0m
+  [4;35;1mSQL (0.000448)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000211)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000385)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001134)[0m   [0;1mSHOW FIELDS FROM `authors`[0m
+  [4;35;1mSQL (0.002276)[0m   [0mdescribe `authors`[0m
+  [4;36;1mSQL (0.000378)[0m   [0;1mSHOW KEYS FROM `authors`[0m
+  [4;35;1mSQL (0.002182)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.001965)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.000430)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.001884)[0m   [0;1mSHOW FIELDS FROM `ingredients`[0m
+  [4;35;1mSQL (0.001700)[0m   [0mdescribe `ingredients`[0m
+  [4;36;1mSQL (0.000526)[0m   [0;1mSHOW KEYS FROM `ingredients`[0m
+  [4;35;1mSQL (0.001854)[0m   [0mSHOW FIELDS FROM `instructions`[0m
+  [4;36;1mSQL (0.001859)[0m   [0;1mdescribe `instructions`[0m
+  [4;35;1mSQL (0.000359)[0m   [0mSHOW KEYS FROM `instructions`[0m
+  [4;36;1mSQL (0.001657)[0m   [0;1mSHOW FIELDS FROM `recipes`[0m
+  [4;35;1mSQL (0.001614)[0m   [0mdescribe `recipes`[0m
+  [4;36;1mSQL (0.000322)[0m   [0;1mSHOW KEYS FROM `recipes`[0m
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2008-10-15 22:57:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"authors"}
+  [4;35;1mAuthor Load (0.000227)[0m   [0mSELECT * FROM `authors` [0m
+Rendering template within layouts/authors
+Rendering authors/index
+Completed in 0.01521 (65 reqs/sec) | Rendering: 0.00147 (9%) | DB: 0.00023 (1%) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2008-10-15 22:57:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"authors"}
+  [4;36;1mSQL (0.000236)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mAuthor Load (0.000285)[0m   [0mSELECT * FROM `authors` [0m
+Rendering template within layouts/authors
+Rendering authors/index
+Completed in 0.01767 (56 reqs/sec) | Rendering: 0.00356 (20%) | DB: 0.00052 (2%) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2008-10-15 22:57:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"authors"}
+  [4;36;1mAuthor Load (0.000244)[0m   [0;1mSELECT * FROM `authors` [0m
+Rendering template within layouts/authors
+Rendering authors/index
+Completed in 0.01520 (65 reqs/sec) | Rendering: 0.00153 (10%) | DB: 0.00024 (1%) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2008-10-15 22:57:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"authors"}
+  [4;35;1mAuthor Load (0.000242)[0m   [0mSELECT * FROM `authors` [0m
+Rendering template within layouts/authors
+Rendering authors/index
+Completed in 0.01533 (65 reqs/sec) | Rendering: 0.00145 (9%) | DB: 0.00024 (1%) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2008-10-15 22:57:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"authors"}
+  [4;36;1mAuthor Load (0.000241)[0m   [0;1mSELECT * FROM `authors` [0m
+Rendering template within layouts/authors
+Rendering authors/index
+Completed in 0.01483 (67 reqs/sec) | Rendering: 0.00146 (9%) | DB: 0.00024 (1%) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2008-10-15 22:57:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"authors"}
+  [4;35;1mAuthor Load (0.000229)[0m   [0mSELECT * FROM `authors` [0m
+Rendering template within layouts/authors
+Rendering authors/index
+Completed in 0.01490 (67 reqs/sec) | Rendering: 0.00152 (10%) | DB: 0.00023 (1%) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2008-10-15 22:57:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"authors"}
+  [4;36;1mAuthor Load (0.000235)[0m   [0;1mSELECT * FROM `authors` [0m
+Rendering template within layouts/authors
+Rendering authors/index
+Completed in 0.01494 (66 reqs/sec) | Rendering: 0.00145 (9%) | DB: 0.00024 (1%) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2008-10-15 22:57:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"authors"}
+  [4;35;1mAuthor Load (0.000238)[0m   [0mSELECT * FROM `authors` [0m
+Rendering template within layouts/authors
+Rendering authors/index
+Completed in 0.01508 (66 reqs/sec) | Rendering: 0.00150 (9%) | DB: 0.00024 (1%) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2008-10-15 22:57:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"authors"}
+  [4;36;1mAuthor Load (0.000264)[0m   [0;1mSELECT * FROM `authors` [0m
+Rendering template within layouts/authors
+Rendering authors/index
+Completed in 0.01536 (65 reqs/sec) | Rendering: 0.00149 (9%) | DB: 0.00026 (1%) | 200 OK [http://localhost/authors]
+
+
+Processing AuthorsController#index (for 127.0.0.1 at 2008-10-15 22:59:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlY2FmMDQyYmU2NzMyZDZiZGZhMmMwMjg1NTEzM2Fj
+YjMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e638e247d650f4ca491483918f00841e6359000e
+  Parameters: {"action"=>"index", "controller"=>"authors"}
+  [4;35;1mAuthor Load (0.000296)[0m   [0mSELECT * FROM `authors` [0m
+Rendering template within layouts/authors
+Rendering authors/index
+Completed in 0.01614 (61 reqs/sec) | Rendering: 0.00258 (15%) | DB: 0.00030 (1%) | 200 OK [http://localhost/authors]

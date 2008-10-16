@@ -4586,3 +4586,228 @@ Rendering recipes/new
 Completed in 0.03112 (32 reqs/sec) | Rendering: 0.01444 (46%) | DB: 0.00720 (23%) | 200 OK [http://test.host/recipes?]
   [4;35;1mSQL (0.000227)[0m   [0mSELECT count(*) AS count_all FROM `recipes` [0m
   [4;36;1mSQL (0.000128)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000069)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000183)[0m   [0;1mSELECT count(*) AS count_all FROM `recipes` [0m
+
+
+Processing RecipesController#create (for 0.0.0.0 at 2008-10-13 21:36:47) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "recipe"=>{}, "controller"=>"recipes"}
+Rendering template within layouts/recipes
+Rendering recipes/new
+Completed in 0.03040 (32 reqs/sec) | Rendering: 0.01436 (47%) | DB: 0.00984 (32%) | 200 OK [http://test.host/recipes?]
+  [4;35;1mSQL (0.000235)[0m   [0mSELECT count(*) AS count_all FROM `recipes` [0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000231)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000174)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000226)[0m   [0;1mSELECT count(*) AS count_all FROM `recipes` [0m
+
+
+Processing RecipesController#create (for 0.0.0.0 at 2008-10-13 21:37:11) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "recipe"=>{}, "controller"=>"recipes"}
+Rendering template within layouts/recipes
+Rendering recipes/new
+Completed in 0.03105 (32 reqs/sec) | Rendering: 0.01489 (47%) | DB: 0.00916 (29%) | 200 OK [http://test.host/recipes?]
+  [4;35;1mSQL (0.000200)[0m   [0mSELECT count(*) AS count_all FROM `recipes` [0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.033022)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000171)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000147)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000106)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000103)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000103)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000102)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000085)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000105)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000105)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000102)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000075)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000105)[0m   [0mBEGIN[0m
+  [4;36;1mRecipe Create (0.000264)[0m   [0;1mINSERT INTO `recipes` (`created_at`, `title`, `updated_at`, `description`) VALUES('2008-10-15 03:23:25', 'My title', '2008-10-15 03:23:25', NULL)[0m
+  [4;35;1mInstruction Create (0.000160)[0m   [0mINSERT INTO `instructions` (`step`, `created_at`, `recipe_id`, `updated_at`, `description`) VALUES(1, '2008-10-15 03:23:25', 996332878, '2008-10-15 03:23:25', 'This is step 1')[0m
+  [4;36;1mInstruction Create (0.000120)[0m   [0;1mINSERT INTO `instructions` (`step`, `created_at`, `recipe_id`, `updated_at`, `description`) VALUES(2, '2008-10-15 03:23:25', 996332878, '2008-10-15 03:23:25', 'This is step 2')[0m
+  [4;35;1mInstruction Create (0.000146)[0m   [0mINSERT INTO `instructions` (`step`, `created_at`, `recipe_id`, `updated_at`, `description`) VALUES(3, '2008-10-15 03:23:25', 996332878, '2008-10-15 03:23:25', 'This is step 3')[0m
+  [4;36;1mInstruction Load (0.010043)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 996332878) [0m
+  [4;35;1mSQL (0.000912)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000186)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000157)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000156)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000301)[0m   [0mSELECT count(*) AS count_all FROM `recipes` [0m
+
+
+Processing RecipesController#create (for 0.0.0.0 at 2008-10-14 23:23:25) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "recipe"=>{}, "controller"=>"recipes"}
+Rendering template within layouts/recipes
+Rendering recipes/new
+Completed in 0.05314 (18 reqs/sec) | Rendering: 0.04008 (75%) | DB: 0.10120 (190%) | 200 OK [http://test.host/recipes?]
+  [4;36;1mSQL (0.000314)[0m   [0;1mSELECT count(*) AS count_all FROM `recipes` [0m
+  [4;35;1mSQL (0.000170)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000145)[0m   [0mSELECT count(*) AS count_all FROM `recipes` [0m
+  [4;36;1mRecipe Load (0.000202)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 953125641) [0m
+
+
+Processing RecipesController#destroy (for 0.0.0.0 at 2008-10-14 23:23:25) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"recipes"}
+  [4;35;1mRecipe Load (0.000179)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 953125641) [0m
+  [4;36;1mRecipe Destroy (0.000205)[0m   [0;1m DELETE FROM `recipes`
+ WHERE `id` = 953125641
+[0m
+Redirected to http://test.host/recipes
+Completed in 0.00385 (259 reqs/sec) | DB: 0.00135 (35%) | 302 Found [http://test.host/recipes/953125641]
+  [4;35;1mSQL (0.000155)[0m   [0mSELECT count(*) AS count_all FROM `recipes` [0m
+  [4;36;1mSQL (0.000720)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000185)[0m   [0mBEGIN[0m
+  [4;36;1mRecipe Load (0.000272)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 953125641) [0m
+
+
+Processing RecipesController#edit (for 0.0.0.0 at 2008-10-14 23:23:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"recipes"}
+  [4;35;1mRecipe Load (0.000181)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 953125641) [0m
+Rendering template within layouts/recipes
+Rendering recipes/edit
+  [4;36;1mSQL (0.000289)[0m   [0;1mSELECT count(*) AS count_all FROM `instructions` WHERE (`instructions`.recipe_id = 953125641) [0m
+Rendered instructions/_edit (0.00269)
+Completed in 0.05913 (16 reqs/sec) | Rendering: 0.05715 (96%) | DB: 0.00180 (3%) | 200 OK [http://test.host/recipes/953125641/edit]
+  [4;35;1mSQL (0.000173)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2008-10-14 23:23:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"recipes"}
+  [4;35;1mRecipe Load (0.000226)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering template within layouts/recipes
+Rendering recipes/index
+Completed in 0.01091 (91 reqs/sec) | Rendering: 0.00842 (77%) | DB: 0.00051 (4%) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.000127)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000106)[0m   [0mBEGIN[0m
+
+
+Processing RecipesController#new (for 0.0.0.0 at 2008-10-14 23:23:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"recipes"}
+Rendering template within layouts/recipes
+Rendering recipes/new
+Completed in 0.00856 (116 reqs/sec) | Rendering: 0.00699 (81%) | DB: 0.00023 (2%) | 200 OK [http://test.host/recipes/new]
+  [4;36;1mSQL (0.000126)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000075)[0m   [0mBEGIN[0m
+  [4;36;1mRecipe Load (0.000231)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 953125641) [0m
+
+
+Processing RecipesController#show (for 0.0.0.0 at 2008-10-14 23:23:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"recipes"}
+  [4;35;1mRecipe Load (0.000160)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 953125641) [0m
+Rendering template within layouts/recipes
+Rendering recipes/show
+Completed in 0.00822 (121 reqs/sec) | Rendering: 0.00566 (68%) | DB: 0.00059 (7%) | 200 OK [http://test.host/recipes/953125641]
+  [4;36;1mSQL (0.000126)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000106)[0m   [0mBEGIN[0m
+  [4;36;1mRecipe Load (0.000181)[0m   [0;1mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 953125641) [0m
+
+
+Processing RecipesController#update (for 0.0.0.0 at 2008-10-14 23:23:25) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "recipe"=>{}, "controller"=>"recipes"}
+  [4;35;1mRecipe Load (0.000178)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 953125641) [0m
+  [4;36;1mInstruction Load (0.000174)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 953125641) [0m
+Redirected to http://test.host/recipes/953125641
+Completed in 0.00698 (143 reqs/sec) | DB: 0.00077 (10%) | 302 Found [http://test.host/recipes/953125641?]
+  [4;35;1mSQL (0.000126)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000171)[0m   [0mBEGIN[0m
+  [4;36;1mRecipe Create (0.000217)[0m   [0;1mINSERT INTO `recipes` (`created_at`, `title`, `updated_at`, `description`) VALUES('2008-10-15 03:24:32', 'My title', '2008-10-15 03:24:32', NULL)[0m
+  [4;35;1mInstruction Create (0.000153)[0m   [0mINSERT INTO `instructions` (`step`, `created_at`, `recipe_id`, `updated_at`, `description`) VALUES(1, '2008-10-15 03:24:32', 996332879, '2008-10-15 03:24:32', 'This is step 1')[0m
+  [4;36;1mInstruction Create (0.000153)[0m   [0;1mINSERT INTO `instructions` (`step`, `created_at`, `recipe_id`, `updated_at`, `description`) VALUES(2, '2008-10-15 03:24:32', 996332879, '2008-10-15 03:24:32', 'This is step 2')[0m
+  [4;35;1mInstruction Create (0.000134)[0m   [0mINSERT INTO `instructions` (`step`, `created_at`, `recipe_id`, `updated_at`, `description`) VALUES(3, '2008-10-15 03:24:32', 996332879, '2008-10-15 03:24:32', 'This is step 3')[0m
+  [4;36;1mInstruction Load (0.000226)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 996332879) [0m
+  [4;35;1mSQL (0.000736)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000187)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000148)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000161)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000112)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000230)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000172)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mSELECT count(*) AS count_all FROM `recipes` [0m
+
+
+Processing RecipesController#create (for 0.0.0.0 at 2008-10-14 23:24:36) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "recipe"=>{}, "controller"=>"recipes"}
+Rendering template within layouts/recipes
+Rendering recipes/new
+Completed in 0.03047 (32 reqs/sec) | Rendering: 0.01453 (47%) | DB: 0.00810 (26%) | 200 OK [http://test.host/recipes?]
+  [4;35;1mSQL (0.000219)[0m   [0mSELECT count(*) AS count_all FROM `recipes` [0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000234)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000173)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000171)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000219)[0m   [0;1mSELECT count(*) AS count_all FROM `recipes` [0m
+
+
+Processing RecipesController#create (for 0.0.0.0 at 2008-10-14 23:25:26) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "recipe"=>{}, "controller"=>"recipes"}
+Rendering template within layouts/recipes
+Rendering recipes/new
+Completed in 0.03020 (33 reqs/sec) | Rendering: 0.01422 (47%) | DB: 0.00944 (31%) | 200 OK [http://test.host/recipes?]
+  [4;35;1mSQL (0.000223)[0m   [0mSELECT count(*) AS count_all FROM `recipes` [0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000172)[0m   [0mBEGIN[0m
+  [4;36;1mRecipe Create (0.000181)[0m   [0;1mINSERT INTO `recipes` (`created_at`, `title`, `updated_at`, `description`) VALUES('2008-10-15 03:25:42', 'My title', '2008-10-15 03:25:42', NULL)[0m
+  [4;35;1mInstruction Create (0.000163)[0m   [0mINSERT INTO `instructions` (`step`, `created_at`, `recipe_id`, `updated_at`, `description`) VALUES(1, '2008-10-15 03:25:42', 996332880, '2008-10-15 03:25:42', 'This is step 1')[0m
+  [4;36;1mInstruction Create (0.000136)[0m   [0;1mINSERT INTO `instructions` (`step`, `created_at`, `recipe_id`, `updated_at`, `description`) VALUES(2, '2008-10-15 03:25:42', 996332880, '2008-10-15 03:25:42', 'This is step 2')[0m
+  [4;35;1mInstruction Create (0.000151)[0m   [0mINSERT INTO `instructions` (`step`, `created_at`, `recipe_id`, `updated_at`, `description`) VALUES(3, '2008-10-15 03:25:42', 996332880, '2008-10-15 03:25:42', 'This is step 3')[0m
+  [4;36;1mInstruction Load (0.000339)[0m   [0;1mSELECT * FROM `instructions` WHERE (`instructions`.recipe_id = 996332880) [0m
+  [4;35;1mSQL (0.000452)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000118)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000103)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000116)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000103)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000231)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000172)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mSELECT count(*) AS count_all FROM `recipes` [0m
+
+
+Processing RecipesController#create (for 0.0.0.0 at 2008-10-14 23:25:46) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "recipe"=>{}, "controller"=>"recipes"}
+Rendering template within layouts/recipes
+Rendering recipes/new
+Completed in 0.03001 (33 reqs/sec) | Rendering: 0.01408 (46%) | DB: 0.00876 (29%) | 200 OK [http://test.host/recipes?]
+  [4;35;1mSQL (0.000220)[0m   [0mSELECT count(*) AS count_all FROM `recipes` [0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000234)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000071)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000103)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000171)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000215)[0m   [0;1mSELECT count(*) AS count_all FROM `recipes` [0m
+
+
+Processing RecipesController#create (for 0.0.0.0 at 2008-10-14 23:26:06) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "recipe"=>{}, "controller"=>"recipes"}
+Rendering template within layouts/recipes
+Rendering recipes/new
+Completed in 0.03019 (33 reqs/sec) | Rendering: 0.01424 (47%) | DB: 0.00989 (32%) | 200 OK [http://test.host/recipes?]
+  [4;35;1mSQL (0.000207)[0m   [0mSELECT count(*) AS count_all FROM `recipes` [0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mROLLBACK[0m

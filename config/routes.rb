@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :authors
+
+  map.resources :categories
+
+  map.resources :ingredients
+
   map.resources :instructions
 
   map.resources :recipes

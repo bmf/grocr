@@ -1,0 +1,24 @@
+<h1>Listing ingredients</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Image url</th>
+  </tr>
+
+<% for ingredient in @ingredients %>
+  <tr>
+    <td><%=h ingredient.title %></td>
+    <td><%=h ingredient.description %></td>
+    <td><%=h ingredient.image_url %></td>
+    <td><%= link_to 'Show', ingredient %></td>
+    <td><%= link_to 'Edit', edit_ingredient_path(ingredient) %></td>
+    <td><%= link_to 'Destroy', ingredient, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New ingredient', new_ingredient_path %>

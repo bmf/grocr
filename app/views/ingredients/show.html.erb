@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @ingredient.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @ingredient.description %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%=h @ingredient.image_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |
+<%= link_to 'Back', ingredients_path %>
